@@ -1,0 +1,186 @@
+.flexcards{ /* main wrapper for cards layout */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+.flexcards .profiles{ /* individual card CSS */
+    flex: 1;
+    position: relative;
+	text-align: left;
+    padding: 5px;
+    max-width: 240px; /* max width of each card */
+    min-width: 240px; /* min width of each card */
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 90%;
+		cursor: url("../assets/cursor_click.png"), auto;
+    background-image: url("../assets/members/founders_back.jpg");
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#flexcards1 .profiles :hover{
+	cursor: url("../assets/cursor_click.png");
+}
+
+.flexcards .profiles h3{
+	margin: 0;
+}
+
+
+.flexcards .profiles img{
+ 	border-radius: 50%;
+	float: left;
+	margin-right: 15px;
+	box-shadow: 2px 2px 5px gray;
+
+}
+
+#flexcards2{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+#flexcards2 .profiles{
+	flex: 1;
+    position: relative;
+	line-height: 28px;
+	text-align: left;
+    padding: 5px;
+    max-width: 280px; /* max width of each card */
+    min-width: 280px; /* min width of each card */
+	max-height: 80px; 
+    min-height: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 90%;
+    background-image: url("../assets/members/committee_back.jpg");
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#flexcards2 .profiles h3{
+	margin: 0;
+}
+
+
+#flexcards2 .profiles img{
+ 	border-radius: 50%;
+	float: left;
+	margin-right: 15px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+#flexcards3{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+#flexcards3 .profiles{
+	flex: 1;
+    position: relative;
+	line-height: 28px;
+	text-align: left;
+    padding: 5px;
+    max-width: 280px; /* max width of each card */
+    min-width: 280px; /* min width of each card */
+	max-height: 80px; 
+    min-height: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 90%;
+    background-image: url("../assets/members/members_back.jpg");
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#flexcards3 .profiles h3{
+	margin: 0;
+}
+
+
+#flexcards3 .profiles img{
+ 	border-radius: 50%;
+	float: left;
+	margin-right: 15px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+#flexcards4{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+#flexcards4 .profiles{
+	flex: 1;
+    position: relative;
+	line-height: 28px;
+	text-align: left;
+    padding: 5px;
+    max-width: 280px; /* max width of each card */
+    min-width: 280px; /* min width of each card */
+	max-height: 80px; 
+    min-height: 80px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 90%;
+    background-image: url("../assets/members/ex_member_back.gif");
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#flexcards4 .profiles h3{
+	margin: 0;
+}
+
+
+#flexcards4 .profiles img{
+ 	border-radius: 50%;
+	float: left;
+	margin-right: 15px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+.openprofile{ /*class added to contents of 1st demo when they are open*/
+    background: yellow;
+    box-shadow: 0 5px 5px rgba(0,0,0, .3);
+    border-bottom: 4px solid #266CD8;
+}
+
+div.details{ /* style for 1st demo expanded content */
+	margin-top: 2em;
+	line-height: 2;
+	border-top: 5px solid green;
+	font-size: 110%;
+
+}
+
+div.details img{ /* style for 1st demo expanded content */
+	float: right;
+	margin: 0 0 10px 10px;
+	padding-left: 10px;
+	width: 150px;
+	height: auto;
+	border-left: 1px solid red;
+}

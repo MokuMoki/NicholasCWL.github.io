@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>𝓜𝓮𝓶𝓫𝓮𝓻 𝓛𝓲𝓼𝓽</title>
+	<link rel="icon" href="assets/favicon.png" type="image/png" />
+	<link href="https://fonts.googleapis.com/css?family=Bevan|Source+Sans+Pro:bold" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="css/scrolltopcontrol.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="assets/logo_hover.js"></script>
+
+	<!-- Flex Cards Accordion http://www.dynamicdrive.com/dynamicindex17/flex-cards-accordion.htm -->
+	<link rel="stylesheet" href="css/flexcardaccordion.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/ddaccordion.js"></script>
+	<script type="text/javascript">
+
+	//Initialize first demo:
+	ddaccordion.init(
+		{
+			headerclass: "profiles", //Shared CSS class name of headers group
+			contentclass: "details", //Shared CSS class name of contents group
+			revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+			mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+			collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+			defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc]. [] denotes no content.
+			onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+			animatedefault: false, //Should contents open by default be animated into view?
+			scrolltoheader: false, //scroll to header each time after it's been expanded by the user?
+			scrolltocontent: false, //scroll to expanded content each time after it's been expanded by the user?
+			persiststate: false, //persist state of opened contents within browser session?
+			toggleclass: ["", "openprofile"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+			togglehtml: ["none", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+			animatespeed: "slow", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+			oninit:function(expandedindices)
+			{ //custom code to run when headers have initalized
+				//do nothing
+			},
+			onopenclose:function(header, index, state, isuseractivated)
+			{ //custom code to run whenever a header is opened or closed
+				//do nothing
+			}
+		})
+	</script>
+	<!-- End Flex Cards Accordion http://www.dynamicdrive.com/dynamicindex17/flex-cards-accordion.htm -->
+</head>
+
+<body>
+<table class="menubar">
+	<tr>
+		<td id="title">
+			<a id="sounddiv" href="index.html">
+				<img onmouseover="playclip();" src="assets/logo.png" alt="logo" width="100px"/>
+			</a>
+			<audio><source src="assets/ggez.mp3" /></audio>
+			<a id="logo" href="index.html">APU EXTREME ESPORTS CLUB</a>
+		</td>
+		<td id="navmenubar">
+			<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li class="divider">|</li>
+			<li><a href="events.html">EVENTS</a></li>
+			<li class="divider">|</li>
+			<li><a href="tutorials.html">GAMING TUTORIALS</a></li>
+			<li class="divider">|</li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li class="divider">|</li>
+			<li><a href="register.html">REGISTER</a></li>
+			</ul>
+		</td>
+	</tr>
+</table>
+	<table class="thumbnail" cellspacing="0px">
+		<tr>
+			<td><img id="img1" src="assets/members.jpg" alt="" style="object-position:center;"/></td>
+		</tr>
+	</table>
+	<table cellspacing="10px" width="100%">
+	<tr>
+	<td class="content" width="80%">
+		<div id="content">
+		<h1 class="h1">Member List</h1>
+		<h2 class="h2">Founders</h2>
+		The 4 glorious founders of this club.
+
+		<!-- Cards Layout Section -->
+
+		<div class="flexcards" id="flexcards1">
+			<div class="profiles">
+				<img src="assets/members/member1.jpg" alt="" width="80px"/>
+				<h3>NicholasCWL</h3>
+				<b>Club Founder</b>
+			</div>
+			<div class="profiles">
+				<img src="assets/members/member2.jpg" alt="" width="80px"/>
+				<h3>SkullStrikerK11</h3>
+				<b>Club Co-Founder</b>
+			</div>
+			<div class="profiles">
+				<img src="assets/members/member3.jpg" alt="" width="80px"/>
+				<h3>NRockhouse</h3>
+				<b>Club Co-Founder</b>
+			</div>
+			<div class="profiles">
+				<img src="assets/members/member4.jpg" alt="" width="80px"/>
+				<h3>adendoesmc</h3>
+				<b>Club Executive</b>
+			</div>
+		</div>
+
+		<!-- Corresponding Contents Section-->
+
+		<div class="details">
+		<p><img src="assets/members/member1.jpg" alt=""/>
+			Started from nothing, now he's here. He was a normie Minecraft player when he was 13, residing in his friend's invite-only server but managed to exploit many part of the world resources to make him rich. During the age of 14, he moves to a public Survival server, built a village relatively far away from the spawn point with his newly formed guild, still managed to overtake most players in the server in terms of resources. During the next few years, he take initiative in large projects such as removing an Extreme Hills, building 100x100 farm and building a 4000 blocks distance long railway all through survival mode.</p>
+		</div>
+
+		<div class="details">
+		<p><img src="assets/members/member2.jpg" alt=""/>
+			He is a proud server founder &lpar;Was CityForUs, now known as SpaceForUs&rpar; and a plugin developer. Currently, he is developing his brand new space-themed Minecraft server: SpaceForUs alongside his equally skilled friends. With his multi-year experience in Java programming, he contributed a lot in the core server features development. He is also well known for engaging in PvP fights in Minecraft, acquired skills such as jitter clicking and strafing.</p>
+		</div>
+
+		<div class="details">
+		<p><img src="assets/members/member3.jpg" alt=""/>
+			Hosted a GTA San Andreas Multiplayer Server when he was 13 using a low-performing laopt on a Dynamic DNS domain name that is provided by his father CCTV manufacturer. Although the domain name suggested blurry vision (Blurguard), his vision isn't blur for his future. He managed to visit the Google Malaysia office in 2015 by showing-off his non-script kiddie level programming skill in a scripting competition. At his age of 18, he managed to earn some quick bucks through bug bounty by looking for security vulnabilities in a website and report it to webmaster.</p>
+		</div>
+
+		<div class="details">
+		<p><img src="assets/members/member4.jpg" alt=""/>
+			&ldquo;Is a typical Minecraft player.&rdquo;<br/>
+			That's what he says. Maintaining a low profile is still a requirement even though he is going to show his face during the presentation.</p>
+		</div>
+
+		<br/><br/><br/>
+		<h2 class="h2">Committee</h2>
+		Current committee of the club.
+
+		<!-- Cards Layout Section (Committee) -->
+
+			<div id="flexcards2">
+				<div class="profiles">
+					<img src="assets/members/member5.jpg" alt="" width="80px"/>
+					<h3>lagger232</h3>
+					<b>President</b>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member6.jpg" alt="" width="80px"/>
+					<h3>Leonix</h3>
+					<b>Vice President</b>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member7.jpg" alt="" width="80px"/>
+					<h3>yiwenn</h3>
+					<b>Secretary</b>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member8.jpg" alt="" width="80px"/>
+					<h3>Flexy</h3>
+					<b>Treasurer</b>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member9.jpg" alt="" width="80px"/>
+					<h3>fookyew</h3>
+					<b>Operation Manager</b>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member10.jpg" alt="" width="80px"/>
+					<h3>pusilayer</h3>
+					<b>Director of Administrative</b>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member11.jpg" alt="" width="80px"/>
+					<h3>gaben_lord</h3>
+					<b>Director of Marketing</b>
+				</div>
+			</div>
+
+		<br/>
+		<h2 class="h2">Members</h2>
+		Members of club that joining our salty adventures.
+
+		<!-- Cards Layout Section (Members) -->
+
+			<div id="flexcards3">
+				<div class="profiles">
+					<img src="assets/members/member100.jpg" alt="" width="80px"/>
+					<h3>Ram Satesh</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member101.jpg" alt="" width="80px"/>
+					<h3>Nightcat</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member102.jpg" alt="" width="80px"/>
+					<h3>Kiyoshi</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member103.jpg" alt="" width="80px"/>
+					<h3>Respire</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member104.jpg" alt="" width="80px"/>
+					<h3>DanienLu</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member105.jpg" alt="" width="80px"/>
+					<h3>alosed stan account</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member106.jpg" alt="" width="80px"/>
+					<h3>winterheat</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member107.jpg" alt="" width="80px"/>
+					<h3>Dmces</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member108.jpg" alt="" width="80px"/>
+					<h3>Cloff</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member119.jpg" alt="" width="80px"/>
+					<h3>HearIt</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member110.jpg" alt="" width="80px"/>
+					<h3>Fears</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member111.jpg" alt="" width="80px"/>
+					<h3>Lazza</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member112.jpg" alt="" width="80px"/>
+					<h3>crsy</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member113.jpg" alt="" width="80px"/>
+					<h3>Memerest</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member114.jpg" alt="" width="80px"/>
+					<h3>DJ喜洋洋</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member115.jpg" alt="" width="80px"/>
+					<h3>LavenousChaos</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member116.jpg" alt="" width="80px"/>
+					<h3>sariF_</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member117.jpg" alt="" width="80px"/>
+					<h3>Zant</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member118.jpg" alt="" width="80px"/>
+					<h3>ExperiencedGamer 2019</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member119.jpg" alt="" width="80px"/>
+					<h3>The Destroyer</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member120.jpg" alt="" width="80px"/>
+					<h3>Toffie</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member121.jpg" alt="" width="80px"/>
+					<h3>Mo_q</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member122.jpg" alt="" width="80px"/>
+					<h3>uzer</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member123.jpg" alt="" width="80px"/>
+					<h3>i-am-cat</h3>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member124.jpg" alt="" width="80px"/>
+					<h3>Alosed</h3>
+				</div>
+			</div>
+
+		<br/>
+		<h2 class="h2">Ex-Members</h2>
+
+		<!-- Cards Layout Section (Ex-Members) -->
+
+			<div id="flexcards4">
+				<div class="profiles">
+					<img src="assets/members/member900.jpg" alt="" width="80px"/>
+					<h3>mitosis</h3>
+					<p>Noob</p>
+				</div>
+				<div class="profiles">
+					<img src="assets/members/member901.jpg" alt="" width="80px"/>
+					<h3>JosGanP</h3>
+					<p>RIP Joshua</p>
+				</div>
+			</div>
+		</div>
+	</td>
+	<td class="submenu" width="20%">
+	<div id="submenu">
+		<a class="twitter-timeline" data-lang="en" data-height="1000" data-theme="dark" href="https://twitter.com/ESPN_Esports?ref_src=twsrc%5Etfw">Tweets by ESPN_Esports</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<br/>
+	</div>
+	</td>
+	</tr>
+	</table>
+	<table class="footer">
+		<tr>
+			<td width="10%">
+			</td>
+			<td width="20%">
+				<a href="index.html" style="font-family: Impact; font-size: 28px;">
+					<img onmouseover="playclip();" src="assets/logo.png" alt="logo" width="200px" style="vertical-align: middle;"/>
+					<br/>&nbsp;
+				</a>
+			</td>
+			<td width="15%">
+				<a href="index.html">
+					Home
+				</a><br/>
+				<a href="about.html">
+					About Us
+				</a><br/>
+				<a href="events.html">
+					Events
+				</a><br/>
+				<a href="news.html">
+					News and Media
+				</a><br/>
+				<a href="">
+					<br/>
+				</a>
+			</td>
+			<td width="15%">
+				<a href="meetings.html">
+					Club Meetings
+				</a><br/>
+				<a href="rules.html">
+					Rules and Regulations
+				</a><br/>
+				<a href="attire.html">
+					Attire/Equipment
+				</a><br/>
+				<a href="members.html">
+					Member List
+				</a><br/>
+				<a href="tutorials.html">
+					Gaming Tutorials
+				</a>
+			</td>
+			<td width="15%">
+				<a href="register.html">
+					Register
+				</a><br/>
+				<a href="feedback.html">
+					Enquire/Feedback
+				</a><br/>
+				<a href="https://www.facebook.com/apuesportsclub/">
+					Join us in Facebook
+				</a><br/>
+				<a href="">
+					<br/>
+				</a>
+				<a href="">
+					<br/>
+				</a>
+			</td>
+			<td width="25%">
+			</td>
+		</tr>
+		<tr>
+			<td id="footer" colspan="6">
+				&copy; 2019 FetchOrbis: Cheng Wei Lun, Mun Chee Wah, Woo E-Than, Yap Chee Sing. All Rights Reserved.
+			</td>
+		</tr>
+	</table>
+	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket" ><i></i></a>
+	<script type="text/javascript" src="assets/scrolltopcontrol.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>CS:GO &bull; Recoil Control</title>
+	<link rel="icon" href="assets/favicon.png" type="image/png" />
+	<link href="https://fonts.googleapis.com/css?family=Bevan|Source+Sans+Pro:bold" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Scroll Top Control https://codepen.io/Askwithloud/pen/yNRPWB -->
+	<link href="css/scrolltopcontrol.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="assets/logo_hover.js"></script>
+</head>
+
+<body>
+<table class="menubar">
+	<tr>
+		<td id="title">		
+			<a id="sounddiv" href="index.html">
+				<img onmouseover="playclip();" src="assets/logo.png" alt="logo" width="100px"/>
+			</a>
+			<audio><source src="assets/ggez.mp3" /></audio>
+			<a id="logo" href="index.html">APU EXTREME ESPORTS CLUB</a>
+		</td>
+		<td id="navmenubar">
+			<ul>
+			<li><a href="index.html">HOME</a></li> 
+			<li class="divider">|</li> 
+			<li><a href="events.html">EVENTS</a></li> 
+			<li class="divider">|</li>
+			<li><a href="tutorials.html">GAMING TUTORIALS</a></li> 
+			<li class="divider">|</li>
+			<li><a href="about.html">ABOUT</a></li> 
+			<li class="divider">|</li> 
+			<li><a href="register.html">REGISTER</a></li>
+			</ul>
+		</td>
+	</tr>
+</table>
+	<table class="thumbnail" cellspacing="0px">
+		<tr>
+			<td><img id="img1" src="assets/games/csgo/csgo_header.jpg" alt="" style="object-position:0% 35%;"/></td>
+		</tr>
+	</table>
+	<table cellspacing="10px" width="100%">
+	<tr>
+	<td class="content" width="80%">
+		<div id="content">
+		<h1 class="h1">Recoil Control</h1>
+		It is important to control the recoil while spraying so that you can shoot accurately with the predictable spray pattern. 
+		Snipers are the only weapon category that doesn't have recoil as it can't use to spray.
+		<br/><br/>
+		<span style="font-size: 30px; font-weight: bold; color: orange;">Simple Recoil</span>
+		<br/><br/>
+		Pistols and Shotguns recoil except XM1014 are mostly straightforward to compensate with only a vertical and slightly horizontal line of spray pattern. There are a few Pistols spray pattern &amp; recoil compensation listed below:
+		<br/><br/>
+		<span style="font-weight:bold; font-size: 23px;">Glock 18</span>
+		<br/>
+		<table cellspacing="30px">
+		<tr>
+		<td><img src="assets/games/csgo/Glock-18-spray.gif"/></td>
+		<td><img src="assets/games/csgo/Glock-18-recoil.gif"/></td>
+		</tr>
+		<tr>
+		<td style="text-align: center">Glock-18 Spray Pattern</td>
+		<td style="text-align: center">Glock-18 Recoil Compensation</td>
+		</tr>
+		</table>
+		<span style="font-weight:bold; font-size: 23px;">P2000</span>
+		<br/>
+		<table cellspacing="30px">
+		<tr>
+		<td><img src="assets/games/csgo/P2000-spray.gif"/></td>
+		<td><img src="assets/games/csgo/P2000-recoil.gif"/></td>
+		</tr>
+		<tr>
+		<td style="text-align: center">P2000 Spray Pattern</td>
+		<td style="text-align: center">P2000 Recoil Compensation</td>
+		</tr>
+		</table>
+		<br/>
+		<span style="font-size: 30px; font-weight: bold; color: orange;">Complex Recoil</span>
+		<br/><br/>
+		Other than Pistols and Shotguns, weapons such as Assault Rifles (AR), Submachine Guns (SMG), Machine Guns, and Shotguns have massive differences in spray pattern. These weapons recoil control are more difficult to learn 
+		because its learning curve is steep as it takes in many factors to control the recoil. For instances, time and gaming peripherals such as Mouse and Mouse Pad. There are a few AR and SMG spray pattern &amp; recoil compensation listed below:
+		<br/><br/>
+		<span style="font-weight:bold; font-size: 23px;">AK-47</span>
+		<br/>
+		<table cellspacing="30px">
+		<tr>
+		<td><img src="assets/games/csgo/AK-47-spray.gif" width="300px"/></td>
+		<td><img src="assets/games/csgo/AK-47-recoil.gif" width="300px"/></td>
+		</tr>
+		<tr>
+		<td style="text-align: center">AK-47 Spray Pattern</td>
+		<td style="text-align: center">AK-47 Recoil Compensation</td>
+		</tr>
+		</table>
+		<span style="font-weight:bold; font-size: 23px;">M4A4</span>
+		<br/>
+		<table cellspacing="30px">
+		<tr>
+		<td><img src="assets/games/csgo/M4A4-spray.gif" width="300px"/></td>
+		<td><img src="assets/games/csgo/M4A4-recoil.gif" width="300px"/></td>
+		</tr>
+		<tr>
+		<td style="text-align: center">M4A4 Spray Pattern</td>
+		<td style="text-align: center">M4A4 Recoil Compensation</td>
+		</tr>
+		</table>
+		<span style="font-weight:bold; font-size: 23px;">M4A1-S</span>
+		<br/>
+		<table cellspacing="30px">
+		<tr>
+		<td><img src="assets/games/csgo/M4A1-S-spray.gif" width="300px"/></td>
+		<td><img src="assets/games/csgo/M4A1-S-recoil.gif" width="300px"/></td>
+		</tr>
+		<tr>
+		<td style="text-align: center">M4A1-S Spray Pattern</td>
+		<td style="text-align: center">M4A1-S Recoil Compensation</td>
+		</tr>
+		</table>
+		<br/>
+		<span style="font-weight:bold; font-size: 23px;">P90</span>
+		<br/>
+		<table cellspacing="30px">
+		<tr>
+		<td><img src="assets/games/csgo/P90-spray.gif" width="300px"/></td>
+		<td><img src="assets/games/csgo/P90-recoil.gif" width="300px"/></td>
+		</tr>
+		<tr>
+		<td style="text-align: center">P90 Spray Pattern</td>
+		<td style="text-align: center">P90 Recoil Compensation</td>
+		</tr>
+		</table>
+		<span style="font-style: italic; font-size: 15px;">Information source from <a class="hyperlink" href="http://csgoskills.com/academy/spray-patterns/">CSGO SKILLS</a>.</span>
+		<br/><br/>
+		<span style="font-size:20px; font-family:times-new-roman; font-weight: bold;">For more guidance, please join our <a class="hyperlink" href="meetings.html">Club Meeting</a> as we will demonstrate how to control recoil in CS:GO.</span>
+		<br/><br/>
+		<a class="hyperlink" href="tutorials.html" style="font-size: 20px;">&lt; Back to Gaming Tutorials</a>
+		<br/>
+		</div>
+	</td>
+	<td class="submenu" width="20%">
+	<div id="submenu">
+		<a class="twitter-timeline" data-lang="en" data-height="1000" data-theme="dark" href="https://twitter.com/ESPN_Esports?ref_src=twsrc%5Etfw">Tweets by ESPN_Esports</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<br/>
+	</div>
+	</td>
+	</tr>
+	</table>
+	<table class="footer">
+		<tr>
+			<td width="10%">
+			</td>
+			<td width="20%">
+				<a href="index.html" style="font-family: Impact; font-size: 28px;">
+					<img onmouseover="playclip();" src="assets/logo.png" alt="logo" width="200px" style="vertical-align: middle;"/>
+					<br/>&nbsp;
+				</a>
+			</td>
+			<td width="15%">
+				<a href="index.html">
+					Home
+				</a><br/>
+				<a href="about.html">
+					About Us
+				</a><br/>
+				<a href="events.html">
+					Events
+				</a><br/>
+				<a href="news.html">
+					News and Media
+				</a><br/>
+				<a href="">
+					<br/>
+				</a>
+			</td>
+			<td width="15%">
+				<a href="meetings.html">
+					Club Meetings
+				</a><br/>
+				<a href="rules.html">
+					Rules and Regulations
+				</a><br/>
+				<a href="attire.html">
+					Attire/Equipment
+				</a><br/>
+				<a href="members.html">
+					Member List
+				</a><br/>
+				<a href="tutorials.html">
+					Gaming Tutorials
+				</a>
+			</td>
+			<td width="15%">
+				<a href="register.html">
+					Register
+				</a><br/>
+				<a href="feedback.html">
+					Enquire/Feedback
+				</a><br/>
+				<a href="https://www.facebook.com/apuesportsclub/">
+					Join us in Facebook
+				</a><br/>
+				<a href="">
+					<br/>
+				</a>
+				<a href="">
+					<br/>
+				</a>
+			</td>
+			<td width="25%">
+			</td>
+		</tr>
+		<tr>
+			<td id="footer" colspan="6">
+				&copy; 2019 FetchOrbis: Cheng Wei Lun, Mun Chee Wah, Woo E-Than, Yap Chee Sing. All Rights Reserved.
+			</td>
+		</tr>
+	</table>
+	<a href="javascript:void(0);" id="rocketmeluncur" class="showrocket" ><i></i></a>
+	<script type="text/javascript" src="assets/scrolltopcontrol.js"></script>
+</body>
+</html>
